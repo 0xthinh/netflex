@@ -1,0 +1,32 @@
+.originals {
+  /* Make horizontal scroll */
+  overflow: auto;
+  white-space: nowrap;
+
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 300px;
+  gap: 5px;
+  margin-left: 30px;
+  margin-right: 30px;
+  background-color: transparent;
+}
+
+.originals::-webkit-scrollbar {
+  height: 5px;
+  margin: 0 30px;
+}
+
+.originals::-webkit-scrollbar-track {
+  background-color: #666;
+  border-radius: 100px;
+}
+
+.originals::-webkit-scrollbar-thumb {
+  background: #444;
+}
+
+.originals::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(-45deg, #f95a5a, #db3434);
+}
